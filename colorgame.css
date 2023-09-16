@@ -1,9 +1,10 @@
-body{
+body {
 	background-color: #232323;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 }
-h1{
+
+h1 {
 	color: white;
 	text-align: center;
 	background-color: steelblue;
@@ -14,11 +15,11 @@ h1{
 	padding: 15px 0;
 }
 
-#colorDisplay{
+#colorDisplay {
 	font-size: 180%;
 }
-	
-.square{
+
+.square {
 	width: 27%;
 	background-color: purple;
 	padding-bottom: 27%;
@@ -27,26 +28,35 @@ h1{
 	border-radius: 15%;
 	transition: background 0.5s;
 	align-items: center;
+	justify-content: center;
 }
-.container{
+
+.container {
 	margin: 17px auto;
 	max-width: 600px;
 
 }
 
-#stripe{
+.square-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#stripe {
 	background-color: white;
 	height: 30px;
 	text-align: center;
 
 
 }
-.mode{
+
+.mode {
 	color: white;
 	background: steelblue;
 }
 
-button{
+button {
 	border: none;
 	background: none;
 	text-transform: uppercase;
@@ -58,7 +68,8 @@ button{
 	transition: all 0.3s;
 	outline: none;
 }
-#messageDisp{
+
+#messageDisp {
 	display: inline-block;
 	width: 20%;
 	color: #232323;
@@ -67,10 +78,11 @@ button{
 	letter-spacing: 1px;
 }
 
-button:hover{
+button:hover {
 	color: white;
 	background: steelblue;
 }
+
 
 .footer {
 	position: relative;
@@ -78,8 +90,24 @@ button:hover{
 	text-align: center;
 	padding-top: 40px;
 	margin-top: 50px auto;
-	clear: both; /* Clear any floated elements above the footer */
+	clear: both;
 	font-family: inherit;
 	font-size: smaller;
 	letter-spacing: 1px;
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 768px) {
+	.square {
+		width: 40%;
+		padding-bottom: 40%;
+	}
+
+	.container {
+		max-width: 100%;
+	}
+
+	.square-container {
+		justify-content: center;
+	}
 }
