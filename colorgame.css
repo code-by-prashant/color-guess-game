@@ -110,4 +110,19 @@ button:hover {
 	.square-container {
 		justify-content: center;
 	}
+	#colorDisplay {
+		font-size: 130%;
+	}
+	h1 {
+		line-height: 1.4;
+		
+	}
+	#stripe {
+		height: 50px;
+		text-align: center;
+	}
+	#messageDisp {
+		display: inline-block;
+		width: auto;
+	}
 }
